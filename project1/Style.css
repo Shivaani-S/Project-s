@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+.centerbox{
+    max-width: 300px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    height: 450px;
+    margin: 150px 500px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.centerbox img{
+    text-align: center;
+    max-width: 90%;
+    max-height: 350px;
+    display:block;
+    margin-top: 50px;
+    background-color: white;
+    margin: 10px;
+    
+   border-radius: 10px;
+    
+    
+}
+
+.centerbox button{
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    margin: 9px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.centerbox p,h3{
+    margin: 3px;
+    padding-left: 5px;
+}
+
+.centerbox img {
+    display: inline-block;
+    margin: 10px;
+    text-align: justify;
+    
+
+}
+.centerbox p{
+    display: inline-block;
+    text-align: start;
+    
+}
+.para{
+    padding: 3px;
+}
+.published , button
+{
+    display: block;
+}
+.author {
+      display: flex;
+      align-items: center; /* Vertically centers the name with the avatar */
+      gap: 12px; /* Space between avatar and name */
+    }
+
+    .author img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .author p {
+      font-weight: 800;
+      font-size: 14px;
+    }
+ button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+ }
