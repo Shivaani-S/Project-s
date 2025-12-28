@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+}
+.bgheader {
+    height: 30vh;
+    width: 100%;
+
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.form
+{
+    
+    position:absolute;
+    top: 20vh;
+    left: 60vh;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    padding: 20px;
+    padding-right: 10px;
+}
+    
+.form img,h5,h1,p{
+    display: inline-block;
+    padding: 15px;
+    
+}
+ 
+ .icon{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 90%;
+
+}
+.faq
+{
+    display: flex;
+}
+h5{
+    cursor: pointer;
+}
+h5:hover{
+
+    color: hsl(292, 16%, 49%);
+}
