@@ -1,0 +1,68 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh;
+   
+}
+.Card{
+     margin: 40% , 30vh;
+     width: 300px;
+     height: 150px;
+     background-color:rgb(6, 25, 44);
+     border-radius: 20px;
+     align-items: center;
+     justify-content: center;
+     box-shadow:2cm;
+
+
+    }
+h1{
+    color: aqua;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+p{
+    color: white;
+    padding: 10px;
+    font-size: larger;
+
+
+}
+.Card:hover{
+    width: 350px;
+}
+.Card:hover{
+    cursor: pointer;
+    transition-duration: 2s;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0s;
+   animation: jiggle 0.35s cubic-bezier(.36,.07,.19,.97);;
+}
+.Card.Card:hover::after
+{
+    content: " click to see more";
+    color: white;
+    text-align: center;
+    justify-content: center;
+    transition: glow;
+
+
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <div id="header">
+        <h1>Booksky</h1>
+    </div>
+    
+    <div id="container">
+      <div class="book-container">
+        <h2 style="color: #fd6569; padding: 3px;">Rich Dad poor Dad</h2>
+        <h4 style="font-weight: 800; padding: 3px;">Robert</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio ut harum autem fugiat distinctio!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nobis!
+        </p>
+        <button style="padding: 5px;" id="delete-button" onclick="deletebutton(this)">Delete</button>  
+    </div>
+
+
+    </div>
+    <button id="addbutton" >+</button>
+
+    <div id="popup-overlay"></div>
+
+
+    <div id="popup-box">
+        <h2>Add Book</h2>
+        <input placeholder="Book Title" id="book-title">
+        <input placeholder="Book Author" id="book-author">
+        <input placeholder="Short Description" id="description">
+        <button id="append-item">Add</button>
+        <button style="cursor: pointer;" id="cancel-button">Cancel</button>
+    </div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+
+<div><form >
+    <h1>STUDENT FORM</h1>
+    <table border="1" style="padding: 3px;">
+        <tr>
+            <td style="font-weight: bold;">Name</td>
+            <td><input id="name"></td>
+        </tr>
+         <tr>
+            <td style="font-weight: bold;">Age</td>
+            <td><input id="age" type="number"></td>
+        </tr>
+         <tr>
+            <td style="font-weight: bold;">Gender</td>
+            <td><input id="gender" type="radio" name="gender" value="female">FEMALE <input type="radio" name="gender" value="female">MALE</td>
+            
+        </tr>
+         <tr>
+            <td style="font-weight: bold;">Course</td>
+            <td>
+                <select id="course" style="width: 100%; text-align: center;">
+                    <option>javascript</option>
+                    <option>python</option>
+                    <option>java</option>
+                </select>
+            </td>
+            
+        </tr>
+
+         <tr>
+            <td style="font-weight: bold;">E-mail</td>
+            <td><input id="mail"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button onclick="add()" type="button" style="width: 100%; background-color: aquamarine;">Save</button>
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+<form>
+    <table id="table" border="1">
+        <tr>
+          <td style="font-weight: bold;">Name</td>  
+          <td style="font-weight: bold;">Age</td>
+          <td style="font-weight: bold;">Course</td>
+          <td style="font-weight: bold;">Gender</td>
+          <td style="font-weight: bold;">E-mail</td>
+          <td style="font-weight: bold;">Action</td>
+
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+</form>
+</div>
+
+<style>
+    div{
+        position: absolute;
+        left: 30%;
+        top: 10%;
+    }
+</style>
+
+<script>
+    let name=document.getElementById("name")
+    let age=document.getElementById("age")
+    let course=document.getElementById("course")
+    let mail=document.getElementById("mail")
+    let table=document.getElementById("table")
+     function add()
+     {
+        let gender=document.querySelector('input[name="gender"]:checked')
+        let row=table.insertRow()
+        row.insertCell(0).innerText= name.value;
+        row.insertCell(1).innerText= age.value;
+        row.insertCell(2).innerText= course.value;
+        row.insertCell(3).innerText= gender.value;
+        row.insertCell(4).innerText= mail.value;
+
+        name.value=""
+        age.value=""
+        course.value=""
+        mail.value=""
+        
+
+     }
+
+
+</script>

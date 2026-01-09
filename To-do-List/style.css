@@ -1,0 +1,28 @@
+#header
+{
+    text-align: center;
+    background-color: black;
+    justify-content: center;
+    height: 100px;
+    max-width: 100%;
+    color: white;
+}
+body{
+    background-color: beige;
+}
+
+#bodyy{
+   width: 50%;
+   height: 50%;
+   background-color:lavenderblush;
+   color: black;
+   position: absolute;
+   left: 300px;
+   top: 200px;
+   margin: 20px;
+   padding: 20px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 300;
+  
+
+}

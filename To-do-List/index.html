@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="style.css">
+
+<div id="header"> 
+    <h1>To-do-List</h1>
+</div>
+
+<div id="bodyy">
+    Add :<input id="input">
+    <button onclick="addlist()">Add</button>
+    <ul id="list">
+        <li>
+            Drink 2 Litres of water<button onclick="deleteitem(event)">Delete</button>
+        </li>
+            <p id="warning" style="display: none;">This shouldnt be empty </p>
+
+    </ul>
+</div>
+<div id="footer">
+
+</div>
+
+<script>
+    let inp=document.getElementById("input")
+    let ul=document.getElementById("list")
+    function addlist()
+
+    {
+        if (inp.value.trim()=="") 
+        {
+            warning.style.display="block"
+            return 
+        }
+        warning.style.display="none"
+        let newitem=document.createElement("li")
+        newitem.innerHTML= inp.value + "<button onclick='deleteitem(event)' >Delete </button>"
+        ul.append(newitem)
+        inp.value=""
+    }
+    function deleteitem(event)
+    {
+        event.target.parentElement.remove()
+    }
+    
+</script>
